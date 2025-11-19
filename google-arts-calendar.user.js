@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Google 艺文日历
 // @namespace    https://github.com/cnfeat/google-arts-calendar
-// @version      1.0.0
-// @description  在 Google 艺术与文化页面上创建可拖拽、可关闭的 edui123 日历浮动窗口。浮窗默认贴合左侧，并精准适配 612x899 比例。同时，脚本会自动将主页面滚动到“今日精选”部分，助您快速开启每日浏览。
+// @version      1.0.2
+// @description  左边是单向历的治愈系智慧金句，右边是 Google 艺术与文化今日精选。让你在同一屏幕下完成每日的艺术熏陶与思维提升。设置成首页，每天 3 秒钟，完成艺术和思想的双重充电！
 // @author       cnfeat
 // @match        https://artsandculture.google.com/*
 // @match        https://edui123.com/rili/
