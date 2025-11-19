@@ -1,20 +1,25 @@
-# 🎨 Google 艺文日历
+# 🎨 【Google 艺文日历】—— 你的私人艺术与智慧伴侣
 
-[![](https://img.shields.io/github/v/release/cnfeat/google-arts-calendar?style=flat-square)](https://github.com/cnfeat/google-arts-calendar/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Google 艺文日历** 是一款专为 Tampermonkey 设计的用户脚本，旨在为 Google 艺术与文化爱好者提供一个集成且高效的浏览环境。
+## 🚀 项目简介
 
-该脚本通过克服跨域 iframe 安全限制，将 **edui123 日历** 以一个可交互、可拖拽的精简浮动窗口形式，完美叠加在 **Google 艺术与文化** 的页面上。同时，它还会自动化滚动页面，让您第一时间看到每日精选艺术品。
+**😭 谁懂啊！一键拥有私人艺术馆 + 每日金句！📱 每天变美变聪明的小秘密！**
+
+【Google 艺文日历】是一款专为 Tampermonkey 设计的浏览器增强脚本。它完美解决了集成浏览的难题，为你创造了一个高效、充满**氛围感**的个人数字画廊。
+
+它能将 **Google 艺术与文化** 的高清绝美画面与 **单向历** 的每日智慧金句融合在一起。如果你将它设置为首页，每天打开电脑的瞬间，都能享受不费力的**艺术熏陶和思想提升**。
 
 ---
 
-## ✨ 核心功能亮点
+## ✨ 核心功能亮点 (买点聚焦)
 
-* **双内容高效整合：** 在一个页面上同时浏览 Google 艺术与文化的主页内容和 edui123 日历。
-* **内容净化与适配：** 脚本自动移除日历网站的冗余信息，并精确适配 612x899 的内容比例。
-* **自动定位：** 页面加载时瞬间滚动到“今日精选”的标题位置。
-* **灵活的浮窗控制：** 浮窗默认贴合左侧边缘，支持**拖拽移动**、**调整大小**和**一键关闭**。
+| 特性 | 描述 | 解决痛点 |
+| :--- | :--- | :--- |
+| **审美双修，内容融合** | 完美融合艺术视觉冲击与文字智慧，在一个屏幕上完成每日艺术与思想的充电。 | 告别多窗口切换，轻松提升品味。 |
+| **极致效率，瞬间直达** | 脚本自动将页面**瞬间滚动**到“今日精选”位置。 | 懒人福音！无需滚动，重点内容直接呈现在 C 位。 |
+| **浮窗精致，贴边简洁** | 日历浮窗默认贴合左侧，经过内容净化，移除了所有广告和杂乱元素。 | 避免视觉干扰，桌面更具定制感和高级感。 |
+| **完美适配** | 浮窗尺寸精确适配 612x899 的日历比例，并支持拖拽和一键关闭。 | 解决传统 iframe 嵌入的尺寸和杂乱问题。 |
 
 ---
 
@@ -24,8 +29,8 @@
 
 ### 步骤一：获取脚本代码
 
-1.  访问本仓库中的脚本文件：`https://raw.githubusercontent.com/cnfeat/google-arts-calendar/main/google-arts-calendar.user.js`
-2.  复制该链接内容，或直接点击 Tampermonkey 提供的安装按钮。
+1.  复制以下脚本的 **完整代码**：
+    `https://raw.githubusercontent.com/cnfeat/google-arts-calendar/main/google-arts-calendar.user.js`
 
 ### 步骤二：创建并粘贴脚本
 
@@ -39,6 +44,15 @@
 1.  打开或刷新 Google 艺术与文化页面：`https://artsandculture.google.com/`
 
 **验证结果：** 页面将瞬间滚动至“今日精选”，左上角出现可拖拽的 **【edui123 日历】** 浮动窗口。
+
+---
+
+## ⚙️ 技术原理简述
+
+本项目巧妙地在一个文件中实现了对两个不同域名（Google 艺术与文化和 edui123 日历）的操作：
+
+1.  **跨域突破：** 利用 Tampermonkey 的 **@grant GM_addStyle** 权限，在 iframe 内部强制执行 CSS 净化，克服了 X-Frame-Options/CSP 的安全限制。
+2.  **定位稳定：** 使用 `scrollIntoView({ behavior: 'instant' })` 模式，解决了在 Google 这种动态加载内容 (SPA) 页面上的滚动定位不稳定的问题。
 
 ---
 
